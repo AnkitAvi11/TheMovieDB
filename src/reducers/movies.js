@@ -25,7 +25,7 @@ export const trendingMoviesReducer = (state=initialState, action) => {
         return {
             ...state,
             loading: false
-        }
+        } 
 
         case 'SUCCESS_REQUEST' : 
         return {
@@ -46,7 +46,7 @@ const initialSeriesState = {
 
 export const trendingSeriesReducer = (state = initialSeriesState, action) => {
     switch(action.type) {
-        
+
         default : return state;
     }
 }
