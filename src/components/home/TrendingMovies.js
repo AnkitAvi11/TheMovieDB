@@ -36,10 +36,17 @@ class TrendingMovies extends Component {
                             <p className="header">{movie.title}</p>
                             <div className="meta">
                             <span className="date">{movie.release_date}</span>
-                            </div>
-                            <div className="description">
-                            <small><b>Populatiry</b> {movie.vote_average}</small>
-                            </div>
+                            </div>                            
+                        </div>
+                        <div className="extra content">
+                                <span className="left floated like">
+                                <i className="like icon"></i>
+                                {movie.vote_count}
+                                </span>
+                                <span className="right floated star">
+                                <i className="star icon"></i>
+                                Favorite
+                                </span>
                         </div>
                         </div>
                     </div>
