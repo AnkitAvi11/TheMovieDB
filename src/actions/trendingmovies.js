@@ -34,7 +34,7 @@ export const getTrendingMovies = () => {
             dispatch(successRequest(data.results))
             setTimeout(()=>{
                 dispatch(removeLoading())
-            }, 3000)
+            }, 500)
         })
         .catch(err => dispatch(errorRequest(err)))
     }

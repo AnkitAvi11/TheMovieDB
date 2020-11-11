@@ -30,8 +30,6 @@ export const trendingMoviesReducer = (state=initialState, action) => {
         case 'SUCCESS_REQUEST' : 
         return {
             ...state,
-            loading: false,
-            error: null,
             movies: action.payload
         }
 
