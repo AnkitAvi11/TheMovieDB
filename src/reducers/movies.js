@@ -27,7 +27,7 @@ export const trendingMoviesReducer = (state=initialState, action) => {
             loading: false
         } 
 
-        case 'SUCCESS_REQUEST' : 
+        case 'SUCCESS_REQUEST' :  
         return {
             ...state,
             movies: action.payload

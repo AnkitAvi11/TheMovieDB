@@ -9,10 +9,10 @@ const errorRequest = (err) => {
     return {
         type : 'ERROR_REQUEST',
         payload : err
-    }
+    } 
 }
 
-const successRequest = (movies) => {
+const successRequest = (movies) => { 
     return {
         type : 'SUCCESS_REQUEST',
         payload : movies
