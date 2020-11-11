@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const Nav = () => {
     return (
-<div className="ui container" style={{padding:"15px 0px"}}>
+<div className="ui container" style={{margin:"15px 0px"}}>
         <div className="ui secondary  menu">
         <Link to="/" className="item">
           <b>The Movie DB</b>

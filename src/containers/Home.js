@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import TrendingMovies from '../components/home/TrendingMovies'
 
 class Home extends Component {
     constructor (props) {
@@ -8,7 +9,7 @@ class Home extends Component {
     render() {
         return (
             <div className="ui container">
-                <p>Home page</p>
+                <TrendingMovies />
             </div>
         )
     }

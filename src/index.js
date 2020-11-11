@@ -7,9 +7,11 @@ import { applyMiddleware, createStore } from "redux";
 import { Provider } from "react-redux";
 import thunk from 'redux-thunk';
 
+import reducers from './reducers'
+
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={()=>{}, applyMiddleware(thunk)}>
+    <Provider store={createStore(reducers, applyMiddleware(thunk))}>
       <App />
     </Provider>
   </React.StrictMode>,
