@@ -36,3 +36,17 @@ export const trendingMoviesReducer = (state=initialState, action) => {
         default : return state
     }
 }
+
+//  reducer for the trending TV series
+const initialSeriesState = {
+    loading : false,
+    error: null,
+    series : null
+}
+
+export const trendingSeriesReducer = (state = initialSeriesState, action) => {
+    switch(action.type) {
+        
+        default : return state;
+    }
+}

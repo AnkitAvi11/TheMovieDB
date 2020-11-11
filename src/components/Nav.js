@@ -20,7 +20,7 @@ const Nav = () => {
         <div className="right menu">
           <div className="item">
             <div className="ui icon input">
-              <input type="text" placeholder="Search movies ..." />
+              <input type="text" placeholder="Search keyword ..." />
               <i className="search link icon"></i>
             </div>
           </div>
