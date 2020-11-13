@@ -11,9 +11,10 @@ class TrendingMovies extends Component {
     }
 
     render () {
+        
         if(this.props.movies.loading) {
             return <Layout>
-                <h3 className="title">Trending Movies</h3>
+                <h2 className="title">Trending Movies</h2>
                 <Loader/>
             </Layout>
         }
@@ -55,7 +56,7 @@ class TrendingMovies extends Component {
 
         return (
             <Layout>
-                <h3 className="title">Trending Movies</h3>
+                <h2 className="title">Trending Movies</h2>
                 <div className="ui grid">
                 {movieCards}
                 </div>
@@ -73,3 +74,4 @@ const mapStateToProps = (state) => {
 export default connect(mapStateToProps,{
     getTrendingMovies
 })(TrendingMovies);
+

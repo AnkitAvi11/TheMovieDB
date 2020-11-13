@@ -1,7 +1,8 @@
 import { combineReducers } from "redux";
-import { trendingMoviesReducer, trendingSeriesReducer } from './movies'
+import { trendingMoviesReducer, trendingSeriesReducer, moviePageReducer } from './movies'
 
 export default combineReducers ({
     trendingMovies : trendingMoviesReducer,
-    trendingSeries : trendingSeriesReducer
+    trendingSeries : trendingSeriesReducer,
+    searched_movies : moviePageReducer
 });

@@ -15,7 +15,7 @@ class TrendingSeries extends Component {
         
         if(this.props.series.loading) {
             return <Layout>
-                <h3 className="title">Trending Series</h3>
+                <h2 className="title">Trending Series</h2>
                 <Loader/>
             </Layout>
         }
@@ -55,9 +55,10 @@ class TrendingSeries extends Component {
                 )
             })
         }
+        
         return (
             <Layout>
-                <h3 className="title">Trending Series</h3>
+                <h2 className="title">Trending Series</h2>
                 <div className="ui grid">
                 {movieCards}
                 </div>

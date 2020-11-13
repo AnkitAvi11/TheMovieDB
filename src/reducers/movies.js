@@ -77,3 +77,38 @@ export const trendingSeriesReducer = (state = initialSeriesState, action) => {
         default : return state;
     }
 }
+
+
+const initState = {
+    loading : false,
+    error : null,
+    movies : []
+}
+
+export const moviePageReducer = (state=initState, action) => {
+    switch(action.type) {
+
+        case 'GET_MOVIES_START' : 
+        return {
+            ...state,
+            loading : true
+        }
+
+        case 'MOVIE_SUCCESS' : 
+        return  {
+            ...state,
+            loading : false,
+            error : null,
+            movies : action.payload
+        }
+
+        case 'MOVIE_ERROR' : 
+        return {
+            ...state,
+            error : action.payload
+        }
+
+        default : return initState;
+
+    }
+}
