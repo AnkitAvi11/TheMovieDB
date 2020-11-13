@@ -47,6 +47,12 @@ const initialSeriesState = {
 export const trendingSeriesReducer = (state = initialSeriesState, action) => {
     switch(action.type) {
 
+        case 'REMOVE_LOADING' : 
+        return {
+            ...state,
+            loading : false
+        }
+
         default : return state;
     }
 }
