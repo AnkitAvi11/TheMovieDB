@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import TrendingMovies from '../components/home/TrendingMovies'
+import TrendingSeries from '../components/home/TrendingSeries';
 
 class Home extends Component {
     constructor (props) {
@@ -10,6 +11,7 @@ class Home extends Component {
         return (
             <div className="ui container">
                 <TrendingMovies />
+                <TrendingSeries />
             </div>
         )
     }

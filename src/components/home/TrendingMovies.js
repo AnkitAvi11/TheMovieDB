@@ -20,7 +20,6 @@ class TrendingMovies extends Component {
 
         let movieCards = null;
         if(this.props.movies.movies !== null) {
-            console.log(this.props.movies.movies[1])
             let movies = []
             for(let i=0;i<8;i++){
                 movies.push(this.props.movies.movies[i])
