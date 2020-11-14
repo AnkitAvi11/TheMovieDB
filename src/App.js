@@ -15,7 +15,7 @@ class App extends React.Component {
         <Nav/>
         <Switch>
           <Route path="/" component={Home} exact />
-          <Route path="/movies" component={Movies} exact />
+          <Route path="/movies" component={Movies} />
         </Switch>
       </BrowserRouter>
     )

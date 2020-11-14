@@ -25,9 +25,7 @@ export const getMoviesList = (keyword='avengers') => {
         fetch("https://api.themoviedb.org/3/search/movie?api_key=d99cf91619cb57d8e03e43735adae9bd&language=en-US&page=1&include_adult=true&query="+keyword)
         .then(res => res.json())
         .then(data => {
-            setTimeout(() => {
-                dispatch(movieSuccess(data.results));
-            }, 500);
+            dispatch(movieSuccess(data.results));
         }).catch(err => {
             getMovieError(err);
         });
