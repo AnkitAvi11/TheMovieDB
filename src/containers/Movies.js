@@ -8,6 +8,7 @@ class Movies extends Component {
     render () {
         return (
             <Switch>
+                
                 <Route
                 path="/movies"
                 exact
