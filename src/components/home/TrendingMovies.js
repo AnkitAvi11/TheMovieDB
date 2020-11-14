@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import Layout from '../../components/Layout'
 import Loader from '../../components/Loader'
 import { getTrendingMovies } from "../../actions/trendingmovies";
+import { Link } from 'react-router-dom';
 
 class TrendingMovies extends Component {
 
@@ -33,7 +34,11 @@ class TrendingMovies extends Component {
                             <img src={`https://image.tmdb.org/t/p/w220_and_h330_face${movie.backdrop_path}`} alt={movie.id} />
                         </div>
                         <div className="content">
-                            <p className="header">{movie.title}</p>
+                            <p className="header">
+                                <Link to={`/movies/${movie.id}`}>
+                                {movie.title}
+                                </Link>
+                            </p>
                             <div className="meta">
                             <span className="date">{movie.release_date}</span>
                             </div>                            

@@ -45,14 +45,14 @@ class AllMovies extends Component {
                     </div>                            
                 </div>
                 <div className="extra content">
-                        <span className="left floated like">
-                        <i className="like icon" style={{color:"red"}}></i>
-                        {movie.vote_count}
-                        </span>
-                        <span className="right floated star">
-                        <i className="star icon" style={{color:"orange"}}></i>
-                        {movie.vote_average} / 10
-                        </span>
+                    <span className="left floated like">
+                    <i className="like icon" style={{color:"red"}}></i>
+                    {movie.vote_count}
+                    </span>
+                    <span className="right floated star">
+                    <i className="star icon" style={{color:"orange"}}></i>
+                    {movie.vote_average} / 10
+                    </span>
                 </div>
                 </div>
             </div>
