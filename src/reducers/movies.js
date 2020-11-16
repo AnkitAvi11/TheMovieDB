@@ -154,3 +154,4 @@ export const getMovie = (state = initial_movie_state, action) => {
         return state
     }
 }
+
