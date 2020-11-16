@@ -112,3 +112,45 @@ export const moviePageReducer = (state=initState, action) => {
 
     }
 }
+
+
+const initial_movie_state = {
+    loading : false, 
+    error : false,
+    movie : ""
+}
+
+export const getMovie = (state = initial_movie_state, action) => {
+    switch(action.type) {
+
+        case 'GET_MOVIE_START' : 
+        return  {
+            ...state,
+            loading : true
+        }
+
+        case 'GET_MOVIE_SUCCESS' : 
+        return {
+            ...state,
+            loading : false,
+            error : false,
+            movie : action.payload
+        }
+
+        case 'GET_MOVIE_ERROR' : 
+        return {
+            ...state,
+            error : action.payload
+        }
+
+        case 'REMOVE_GET_MOVIE_LOADING' : 
+        return {
+            ...state,
+            loading : false
+        }
+
+
+        default : 
+        return state
+    }
+}
